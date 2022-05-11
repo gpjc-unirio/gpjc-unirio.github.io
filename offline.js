@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1650635768,
+	"version": 1652280531,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -181,6 +181,10 @@
 		"images/ifsudeste_cataguases-sheet0.png",
 		"images/unirio-sheet0.png",
 		"images/ppgi-sheet0.png",
+		"images/tadeu-sheet0.png",
+		"images/juliana-sheet0.png",
+		"images/juliana2-sheet0.png",
+		"images/ronney-sheet0.png",
 		"media/chamando_galinha.ogg",
 		"media/galinha.ogg",
 		"media/galo_cantando.ogg",

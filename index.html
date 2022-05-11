@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title id="timer">Uai! Que isso sô!</title>
+	<title>Uai! Que isso sô!</title>
 	
 	<!-- Standardised web app manifest -->
 	<link rel="manifest" href="appmanifest.json" />
@@ -87,36 +87,11 @@
 	<script src="c2runtime.js"></script>
 
     <script>
-		function startTimer(duration, display) {
-			var timer = duration, minutes, seconds;
-			setInterval(function () {
-				minutes = parseInt(timer / 60, 10);
-				seconds = parseInt(timer % 60, 10);
-				minutes = minutes < 10 ? "0" + minutes : minutes;
-				seconds = seconds < 10 ? "0" + seconds : seconds;
-				display.textContent = minutes + ":" + seconds;
-				if (--timer < 0) {
-					timer = duration;
-				}
-				
-				if(timer <= 0){
-					var tab = window.open(window.location,"_top");
-					tab.close();
-					window.close();
-					window.location.replace("https://gpjc.uniriotec.br/estudo/uai/final_jogo.php");
-				}
-			}, 1000);
-		}
-	
 		// Start the Construct 2 project running on window load.
 		jQuery(document).ready(function ()
 		{			
 			// Create new runtime using the c2canvas
 			cr_createRuntime("c2canvas");
-			
-			var duration = 60 * 30; // Converter para segundos
-			display = document.querySelector('#timer'); // selecionando o timer
-			startTimer(duration, display); // iniciando o timer
 		});
 		
 		// Pause and resume on page becoming visible/invisible
